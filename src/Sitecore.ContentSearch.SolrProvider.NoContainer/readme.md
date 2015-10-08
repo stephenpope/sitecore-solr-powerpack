@@ -28,7 +28,7 @@ Inside your `Global.asax.cs` you now startup Sitecore with:
 		}
 	}
 	
-*NB - I didn't include this as a class because I'd need to take a dependency on `Sitecore.Kernel` just for this one class and so it seemed a wasteful dependency. *
+_NB - I didn't include this as a class because I'd need to take a dependency on `Sitecore.Kernel` just for this one class and so it seemed a wasteful dependency._
 
 ##Caveats
 
