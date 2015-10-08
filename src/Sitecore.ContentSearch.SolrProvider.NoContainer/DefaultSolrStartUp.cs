@@ -41,7 +41,7 @@ namespace Sitecore.ContentSearch.SolrProvider.NoContainer
             _operations.RegisterCores();
             _operations.CoreAdmin = BuildCoreAdmin();
 
-            //Register the service locator (yes, its a horrible pattern but this means we dont change to chnage anything is Sitecore for now).
+            //Register the service locator (yes, its a horrible pattern but this means we dont have to change anything internally in Sitecore for now).
             Microsoft.Practices.ServiceLocation.ServiceLocator.SetLocatorProvider(() => new DefaultServiceLocator<Dictionary<string, object>>(_operations));
 
             SolrContentSearchManager.SolrAdmin = _operations.CoreAdmin;
